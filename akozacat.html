@@ -1,0 +1,97 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="styles/akozacat.css">
+		
+		<title>
+			Eagle Manual
+		</title>
+</head>
+<body>
+<header>
+	<img src="logo/logodopravna.png" alt="logodopravna" class="logodopravnac">
+		
+	<h1 class="logo">
+		<a href="index.html">
+			
+			Manual pre<br>
+		 <span>
+			AUTODESK 
+			
+				EAGLE
+			
+		</span>
+		</a>
+	</h1>
+</header>
+<div>
+	<details>
+		<summary></summary>
+		<nav class="menu">
+		  <a href="Návrhový systém EAGLE.html">Návrhový systém EAGLE</a>
+		  <a href="akozacat.html">Ako začať svoju prácu</a>
+		  <a href="Editor schém.html">Editor schém</a>
+		  <a href="Editor plošného spoja.html">Editor plošného spoja</a>
+		  <a href="Výstupy z návrhového systému Eagle.html">Výstupy z návrhového systému</a>
+		</nav>
+	</details>
+</div>
+
+<h1 class="h1eagl">
+	Ako začat<br>
+	<span>
+        svoju prácu
+    </span>
+</h1>
+<br>
+
+
+<div class="firsttext">
+	<li>Otvoríme si aplikáciu Autodesk Eagle, ktorú si vieme stiahnuť na stránke: <a href="https://www.autodesk.com/products/eagle/free-download" class="linkeagle">AUTODESK <span>EAGLE</span></a></li>
+	<li>Po stiahnuti a nainštalovaní aplikácie Autodesk Eagle, otvoríme aplikáciu. Zobrazí sa nám okno/menu, ktoré vyzerá následovne:</li> 
+	<img id="obraz" src="images/zaciatokokno.png" alt="zaciatokokno" class="zaciatokokno">
+	<div id="closebutton" class="modal">
+		<span class="close">&times;</span>
+		<img class="modal-content" id="img01">
+		<div id="caption"></div>
+		<script>
+			var modal = document.getElementById("closebutton");
+			var img = document.getElementById("obraz");
+			var modalImg = document.getElementById("img01");
+			var captionText = document.getElementById("caption");
+			img.onclick = function(){
+			modal.style.display = "block";
+			modalImg.src = this.src;
+			captionText.innerHTML = this.alt;
+			}
+			var span = document.getElementsByClassName("close")[0];
+			span.onclick = function() { 
+			modal.style.display = "none";
+			}
+		</script>
+  </div>
+  <br><br>
+	<li>Vybehne nám dalšie okno, kde je po nás požadovaná registrácia/prihlásenie na Autodesk Eagle. Ak ste už existujúci uživateľom Autodesk Eagle, jednoducho sa príhlasite. No ak ste začinajúci uživateľ Autodesk Eagle, musíte sa zaregistrovať.</li>
+	<br>
+	<li>Po registrácií/prihlásení sa na Autodesk Eagle, prejdeme na prvý krok: <a href="Založenie pracovného adresára s menom žiaka.html" class="prvykrokpres">Založenie pracovného adresára s menom</a></li>
+	<br>
+	<li>Dalším krokom pri vytváraní schémy v Eagle je druhý krok: <a href="Editor Schém.html" class="prvykrokpres">Editor Schém</a></li>
+	<br>
+	<li>Ak budeme mať schému hotovú chceme samozrejme vytvoriť aj dosku plošných spojov (DPS). Tento krok nájdeme na: <a href="Editor Plošného Spoja.html" class="prvykrokpres">Editor Plošného Spoja</a></li>
+  	<br>
+	<li>Po vytvorení schému & taktiež DPS môžeme prejsť ku kroku: <a href="Výstupy z návrhového systému.html" class="prvykrokpres">Výstupy z návrhového systému</a></li>
+</div>
+
+</div>
+<br><br><br><br> <br><br><br>
+
+<footer>
+	<div class="copyright">
+		©2023 Goldmann. All Rights Reserved.<br>
+		<span>
+			Stredná priemyselná škola dopravná<br>
+			Košice
+		</span>
+	</div>
+</footer>
+</body>
+</html>

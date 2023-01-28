@@ -1,0 +1,105 @@
+<html>
+<head>
+    <link rel="stylesheet" href="styles/route.css">
+    <title>Route</title>
+</head>
+<body>
+    <img src="logo/logodopravna.png" alt="logodopravna" class="logodopravnac">
+		
+		<h1 class="logo">
+			<a href="index.html">
+				
+				Manual pre<br>
+			 <span class="eagle">
+				AUTODESK 
+				
+					EAGLE
+			</span>
+		</a>
+		</h1>
+		<nav class="undermenu">
+			<div class="container">
+			<section>
+			  <a class="y" href="Editor Plošného Spoja.html">Editor Plošného Spoja</a>
+			</section>
+		</nav>
+            <details>
+                <summary></summary>
+                <nav class="menu">
+					<a href="Návrhový systém EAGLE.html">Návrhový systém EAGLE</a>
+					<a href="akozacat.html">Ako začať svoju prácu</a>
+					<a href="Editor schém.html">Editor schém</a>
+					<a href="Editor plošného spoja.html">Editor plošného spoja</a>
+					<a href="Výstupy z návrhového systému Eagle.html">Výstupy z návrhového systému</a>
+				</nav>
+            </details>
+        </div>
+		<div class="undertitle">
+		    Route
+	    </div>
+        <div class="firsttext">
+                1. Ručným ukladaním vodičov dosiahneme želaný vzhľad (pozri obr. nižšie). Pri menších DPS ukladáme
+ručne celý spoj, pri zložitejších si môžeme pomôcť autorouterom (viď ďalej), ale aj tak je potrebné takto vytvorený spoj upraviť ručne.
+			<li>
+				Na vytváranie spojov použijeme nástroj ROUTE . Štandardne vedieme spoje na hladine 16 BOTTOM.
+			</li>
+			<li>	
+				Nastavíme si šírku spoja WIDTH. Šírka je závislá od prúdu, hrúbke medi a dovolenom oteplení.
+			</li>
+			<li>
+ 				Spôsob vedenia (zalamovanie) meníme pravým tlačidlom alebo na paneli volieb: <img src="images/lines.png" alt="lines" class="imglines">	
+			</li>
+			<li>
+				Pri ukladaní spojov nás vedie vzdušný spoj. Pre zvýšenie prehľadnosti je dbré vypnúť hladiny
+				NAME (25 a 26) a VALUE (27 a 28).	
+			</li>
+			<li>
+				Pri vedení spoja dodržujte nasledovné pravidlá:
+			</li>
+			<br>
+				<div class="pravidla">
+					<li>vodivé spoje (vodiče) vedieme buď vodorovne alebo zvisle</li>
+					<li>šikmé spoje vedieme pod uhlom 45°</li>
+					<li>zo spájkovacieho bodu (PAD) vychádzame vždy kolmo, až potom lomíme spoj (pozri obr.)</li>
+					<li>minimálna vzdialenosť spoja od okraja dosky je 5 mm</li>
+					<li>nevytvárame ostré rohy (skosujeme spoje - pozri obr.)</li>
+					<li>dodržujeme izolačné vzdialenosti</li>
+					<li>podľa možností využívame metódu „rozliatia medi“- menej odpadov (ekológia),</li>
+					<li>na doske sa snažime používať jednotnú šírku spojov (podľa možností),</li>
+					<li>hustota spojov na doske musí byť rovnomerná,</li>
+					<li>rešpektujeme montážne otvory, spoje nevedieme v ich blízkosti.</li>
+				</div>
+			<img src="images/kratke.png" alt="kratke" class="kratkeimg">
+			<li>
+				Aj pre jednoznačnosť otočenia fólie s motívom pri výrobe DPS ale aj pre lepšiu identifikovateľnosť
+				výrobku DPS popíšeme textom
+			 	(napr. typové označenie, alebo názov zariadenia - na strane BOTTOM sa zobrazuje zrkadlovo (pohľad na monitor je zo strany TOP)
+			</li>
+			<br><br>
+			<li>
+				Po vytvorení všetkých spojov urobíme kontrolu a prípadné posledné úpravy:
+			</li>
+			<br>
+			<div class="pravidla2">
+					<li><b>Zmena šírky spoja</b> - CHANGE/WIDTH/NováHodnota; - kliknutím na spoj zmeniť </li>
+ 
+					<li><b>Návrat do vzdušných vodičov</b> - RIPUP a kliknúť na spoj; pre celý PS vybrať všetko P a použiť pomocou pravého tlačidla myši
+					(GROUP), zvoliť RIPUP a použiť pomocou pravého tlačidla myši </li>
+ 
+					<li><b>Vytvorenie zlomu na spoji</b> -	SPLIT</li>
+					<li><b>kontrola spojov</b> - vypneme hladinu 21 tPlace (obrys súčiastok), skontrolujeme vedenie spojov </li>
+ 
+					<li><b>Zmena puzdra súčiastky</b> - CHANGE/PACKAGE - kliknutím na dostupných puzdier súčiastku sa objaví zoznam dostupných puzdier </li>
+			</div>
+		</div>
+</body>
+	<footer>
+        <div class="copyright">
+            ©2023 Goldmann. All Rights Reserved.<br>
+            <span>
+                Stredná priemyselná škola dopravná<br>
+                Košice
+            </span>
+        </div>
+    </footer>
+</html>
