@@ -1,0 +1,124 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="styles/tlacschemyzapojenia.css">
+	
+		<title>
+			Eagle Manual
+		</title>
+</head>
+<body>
+<header>
+	<img src="logo/logodopravna.png" alt="logodopravna" class="logodopravnac">
+		
+	<h1 class="logo">
+		<a href="index.html">
+			
+			Manual pre<br>
+		 <span>
+			AUTODESK 
+			
+				EAGLE
+			
+		</span>
+		</a>
+	</h1>
+</header>
+<nav class="undermenu">
+	<div class="container">
+	<section>
+	  <a class="y" href="TlacVodivychSpojovDPSnaTlaciarni.html">Tlač vodivých spojov DPS</a>
+	  <a class="y" href="TlacOtvorovDPS.html">Tlač otvorov DPS</a>
+	</section>
+	</div>
+  </nav>
+<div>
+	<details>
+		<summary></summary>
+		<nav class="menu">
+			<a href="NavrhovySystemEAGLE.html">Návrhový systém EAGLE</a>
+			<a href="akozacat.html">Ako začať svoju prácu</a>
+			<a href="EditorSchem.html">Editor schém</a>
+			<a href="EditorPlosnehoSpoja.html">Editor plošného spoja</a>
+			<a href="VystupyzNavrhovehoSystemuEagle.html">Výstupy z návrhového systému</a></nav>
+		</nav>
+	</details>
+</div>
+
+<h1 class="h1eagl">
+	Tlač Schémy Zapojenia
+</h1>
+<br>
+
+
+<div class="firsttext">
+    <p> Príkazom View/Display alebo na paneli zapneme len tie hladiny, ktoré potrebujeme vytlačiť (vytlačí sa to, čo vidíme).</p> 
+    <br>
+	<img src="images/layersdisplay.png" alt="layersdisplay">
+        <div class="displayli">
+        <li>91	Nets - vodiče</li>
+        <li>92	Busses - zbernice</li>
+        <li>93	Pins - vývody súčiastok (piny)</li>
+        <li>94	Symbols	- schematické značky</li>
+        <li>95	Names - označenie súčiastok (R1, R2, ...)</li>
+        <li>96	Values - hodnoty, príp. typy súčiastokś</li>
+    </div>
+    <br>
+    <p>Zvyčajne pri tlači schémy je vypnutá hladina Pins.</p>
+</div>
+<div class="secondtext">
+	<p>
+		<b>
+		V menu File/Print nastavíme parametre tlače:
+		</b>
+		<br>
+		<br>
+	</p>
+		<li><b>MIRROR</b> - zrkadlenie výstupu (pri tlači schémy nezapínať!)</li>
+		<li><b>ROTATE</b> - otočenie v stupu o 90°</li>
+		<li><b>UPSIDEDOWN</b> - otočenie výstupu o 180°. Spolu s ROTATE celkom o 270°</li>
+		<li><b>BLACK</b> - ignoruje nastavenie farieb hladín a tlačí všetko čierno</li>		
+		<li><b>SOLID</b> - ignoruje nastavenie druhov výplní hladín a tlačí všetko s pevnou výplňou</li>
+		<li><b>Caption</b> - aktivuje tlač hlavičky, obsahujúcej čas a dátum tlače a meno súboru. Ak je výkres zrkadlený, v hlavičke sa objaví slovo "mirrored" a ak mierka nie je .0 je pridané do hlavičky ako f=... (mierka je uvedená na 4 des. miesta).</li>		
+		<li><b>Scale factor</b> - nastaví	mierku výkresu (1 znamená 1:1)</li>
+		<li><b>Page limit</b> - nastaví maximálny počet strán pre tlač. Ak by výkres n zadaný počet strán nevošiel, mierka bude utomaticky zmenšená. Hodnota 0 znamená ez obmedzenia.</li>
+</div>
+
+<div class="thirdtext">
+	<p><b>Nastavenie strany Page...</b></p>
+	<br><br>
+	<li>Border - nastavuje ľav (left), horný (top), pravý (right) a dolný (bottom) okraj. Preddefinované hodnoty sú prevzaté z vládača tlačiarne.</li>
+	<li>Calibrate - Ak chceme použiť tlačiareň priamo na tlač výrobných p dkladov spojov, musíme ju najskôr kalibrovať, aby sme dostali výkres presne v mierke 1:1 (hodnoty 1 predpokladajú, že mierka v oboch smeroch presne súhlasí).</li>
+	<img id="obraz" src="images/printpreview.png" alt="printpreview" class="printpreview">
+	<div id="closebutton" class="modal">
+		<span class="close">&times;</span>
+		<img class="modal-content" id="img01">
+		<div id="caption"></div>
+		<script>
+			var modal = document.getElementById("closebutton");
+			var img = document.getElementById("obraz");
+			var modalImg = document.getElementById("img01");
+			var captionText = document.getElementById("caption");
+			img.onclick = function(){
+			modal.style.display = "block";
+			modalImg.src = this.src;
+			captionText.innerHTML = this.alt;
+			}
+			var span = document.getElementsByClassName("close")[0];
+			span.onclick = function() { 
+			modal.style.display = "none";
+			}
+		</script>
+  </div>
+  <p class="captionobr">Obr. Nastavenie parametrov tlače pri tlači el. schémy</p>
+</div>
+</body>
+<footer>
+    <div class="copyright">
+        ©2023 Goldmann. All Rights Reserved.<br>
+        <span>
+            Stredná priemyselná škola dopravná<br>
+            Košice
+        </span>
+    </div>
+</footer>
+</html>

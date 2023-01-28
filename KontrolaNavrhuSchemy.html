@@ -1,0 +1,77 @@
+<html>
+<head>
+    <link rel="stylesheet" href="styles/KontrolaNávrhuSchémy.css">
+    <title>Kontrola Návrhu Schémy</title>
+</head>
+<body>
+    <header>
+        <img src="logo/logodopravna.png" alt="logodopravna" class="logodopravnac">
+            
+        <h1 class="logo">
+            <a href="index.html">
+                Manual pre<br>
+             <span>
+                AUTODESK 
+                
+                    EAGLE
+            </span>
+            </a>
+        </h1>
+    </header>
+    <main>
+        <nav class="undermenu">
+			<div class="container">
+			<section>
+			  <a class="y" href="EditorSchem.html">Editor Schém</a>
+			</section>
+			</div>
+		  </nav>
+        <div>
+            <details>
+                <summary></summary>
+                <nav class="menu">
+                    <a href="NavrhovySystemEAGLE.html">Návrhový systém EAGLE</a>
+                    <a href="akozacat.html">Ako začať svoju prácu</a>
+                    <a href="EditorSchem.html">Editor schém</a>
+                    <a href="EditorPlosnehoSpoja.html">Editor plošného spoja</a>
+                    <a href="VystupyzNavrhovehoSystemuEagle.html">Výstupy z návrhového systému</a></nav>
+                </nav>
+            </details>
+        </div>
+        <div class="undertitle">
+            Kontrola Návrhu Schémy
+        </div>
+        <div class="firsttext">
+            <li class="kns">
+                Kontrola návrhu schémy
+            </li>
+            <div>
+                Aby sme predišli neskorším komplikáciám pri návrhu dosky plošných spojov (DPS) je potrebné pozorne prehliadnuť el. schému a „opticky“ skontrolovať, či je všetko správne prepojené. K optickej kontrole môžeme využiť príkaz <span>Show</span>   , po kliknutí na spoje sa nám všetko čo je spojené „presvieti“ a to vrátane pinov súčiastok. Následne môžeme previesť elektrickú kontrolu.
+            </div>
+                <li class="ek">
+                   Elektrická kontrola 
+                </li>
+                <div>
+                    Príkaz <span>ERC</span> skontroluje zapojenie z hľadiska zásad správneho „elektrického“ návrhu. Každý pin súčiastky má určitý atribút napr. Pas - pasívny pin, Out - výstupný pin, Pwr - napájací pin. 
+                    <br>
+                    Na základe týchto atribútov Erc zisťuje, či sú vzájomne spojené piny ktorých vlastností im to povoľujú, ďalej či v schéme nie sú niektoré piny nezapojené a či je napájanie obvodu prevedené korektne. Na prípadné prehrešky program upozorní výpisom chýb. Táto kontrola nezohľadňuje všetky korektné možnosti zapojenia súčiastok v obvode, má teda predovšetkým iba informatívny charakter a jej hlavnou úlohou je upozorniť na možné chyby.
+                    <img src="images/errorbox.png" alt="errorbox">
+                </div>
+                <br>
+                <div>
+                    V prípade ak sme odstránili všetky chyby, sme pripravení sa presunúť do editora dosiek.
+                </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="copyright">
+            ©2023 Goldmann. All Rights Reserved.<br>
+            <span>
+                Stredná priemyselná škola dopravná<br>
+                Košice
+            </span>
+        </div>
+    </footer>
+</body>
+</html>
