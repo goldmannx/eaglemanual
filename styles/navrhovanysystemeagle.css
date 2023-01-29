@@ -243,13 +243,12 @@ details[open]::before {
     font-weight: bold;
     text-transform: uppercase;
   }
-    section {
-      width:100vw;
-      text-align: center;
-      align-items: center;
-      display: block;
-      position: absolute;
-    }
+  section {
+    text-align: center;
+    align-items: center;
+    display: block;
+    margin: auto;
+  }
       .y {
         text-align: center;
         text-decoration: none;

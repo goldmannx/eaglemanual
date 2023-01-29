@@ -10,10 +10,7 @@
     --color-background: #5757578d;
   }
   
-  span {
-    font-weight: bold;
-  }
-
+  
   * {
     margin: 0;
     padding: 0;
@@ -72,12 +69,12 @@
       font-weight: bold;
       text-transform: uppercase;
     }
-    section {
-      text-align: center;
-      align-items: center;
-      display: block;
-      margin: auto;
-    }
+      section {
+        margin: auto;
+        text-align: center;
+        align-items: center;
+        display: block;
+      }
         .y {
           text-align: center;
           text-decoration: none;
@@ -256,76 +253,72 @@
     }
 
     .firsttext {
-      text-align: left;
       display: flex;
-      max-width: 100%;
+      flex-direction: column;
+      text-align: left;
       width: 1080px;
       font-family: sans-serif;
       font-size: 20px;
       overflow:hidden;
       box-shadow: 0px 4px 30px 0 rgb(0, 0, 0, 1);
       background-color: var(--color-black);
-      border-radius: 15px;
+      border-radius: 10px;
       padding: 20px;
       margin: auto;
-      flex-direction: column;
+      margin-bottom: 40px;
+    }
+  
+    .firsttext div {
+      width: 900px;
+      margin-left: 65px;
+    }
+    
+    .firsttext span {
+      font-weight: bold;
+    }
+  
+    .firsttext .kns {
+      margin-left: 35px;
+      font-weight: bold;
+      text-transform: uppercase;
     }
 
-    .firsttext li {
-      margin-top: 5px;
-      margin-left: 20px;
+    .firsttext .ek {
+      margin-top: 45px;
+      margin-left: 35px;
+      font-weight: bold;
+      text-transform: uppercase;
     }
-
-
-
-    /** ciary **/ 
-    .imglines {
-      margin: auto;
-      width: 250px;
-      height: auto;
-    }
-
-    .pravidla li {
-      margin-top: 3px;
-      margin-left: 60px;
-      list-style-type:decimal;
-    }
-
-    .kratkeimg {
+    
+    .firsttext img {
       width: 500px;
       height: auto;
-      margin-left: 103px;
-    }
-
-    .pravidla2 li {
-      list-style-type: lower-alpha;
-      margin-top: 3px;
-      margin-left: 60px;
+      margin: auto;
     }
 
 
-  .copyright {
-    color: var(--color-black);
-    font-size: 15px;
-    background-color: var(--color-black-12);
-    border-color: var(--color-black);
-    position: relative;
-    justify-content: center;
-    height: 80px;
-    padding: 10px;
-    margin-top: 50px;
-    font-style: italic;
-    font-weight: bold;
-    text-align: center;
-    font-family: sans-serif;
-    box-shadow: 0px -7px 10px black;
-    display: flex;
-    max-width: 100%;
-    flex-direction: column
-  }
-  
-  .copyright span {
-    font-size: 12px;
-  }
-  
-  
+
+
+
+
+    
+    .copyright {
+      color: var(--color-black);
+      font-size: 15px;
+      background-color: var(--color-black-12);
+      border-color: var(--color-black);
+      position: relative;
+      justify-content: center;
+      height: 80px;
+      padding: 10px;
+      font-style: italic;
+      font-weight: bold;
+      text-align: center;
+      font-family: sans-serif;
+      box-shadow: 0px -7px 10px black;
+      
+    }
+    
+    .copyright span {
+      font-size: 12px;
+    }
