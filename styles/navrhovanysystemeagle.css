@@ -124,11 +124,10 @@ details[open] summary::after {
     text-transform: uppercase;
   }
     section {
-      width:100vw;
+      margin: auto;
       text-align: center;
       align-items: center;
       display: block;
-      position: absolute;
     }
       .y {
         text-align: center;
