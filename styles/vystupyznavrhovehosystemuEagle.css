@@ -292,6 +292,8 @@
   display: flex;
   max-width: 100%;
   flex-direction: column;
+  position: fixed;
+  bottom: 0;
 }
 
 .copyright span {
