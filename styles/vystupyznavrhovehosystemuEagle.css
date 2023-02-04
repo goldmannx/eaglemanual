@@ -20,6 +20,9 @@
   body {
     font-family: sans-serif;
     background-color: var(--color-black-1);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
   }
   
   .logo {
@@ -299,4 +302,3 @@
 .copyright span {
   font-size: 12px;
 }
- 
