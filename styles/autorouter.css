@@ -303,6 +303,31 @@
       height: auto;
     }
 
+    .secondtext {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      width: 1080px;
+      font-family: sans-serif;
+      font-size: 20px;
+      overflow:hidden;
+      box-shadow: 0px 4px 30px 0 rgb(0, 0, 0, 1);
+      background-color: var(--color-black);
+      border-radius: 10px;
+      padding: 20px;
+      margin: auto;
+      margin-bottom: 20px;
+  }
+
+
+  .ffli {
+    margin-left: 40px;
+  }
+  .ssli {
+    list-style-type: decimal;
+    margin-left: 80px;
+  }
+
     #obraz {
       border-radius: 5px;
       cursor: pointer;
